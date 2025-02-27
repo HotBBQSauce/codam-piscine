@@ -6,7 +6,7 @@
 /*   By: dguliev <dguliev@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/02/26 16:02:38 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/02/26 16:03:46 by dguliev       ########   odam.nl         */
+/*   Updated: 2025/02/27 15:13:12 by dguliev       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strlowcase(char *str)
 	index = 0;
 	while (str[index] != '\0')
 	{
-		if (str[index] >= 65 && str[index] <= 87)
+		if (str[index] >= 65 && str[index] <= 90)
 			str[index] = str[index] + 32;
 		index++;
 	}

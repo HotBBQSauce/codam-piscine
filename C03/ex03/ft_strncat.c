@@ -5,7 +5,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	while (*dest)
 		dest++;
 	count = 0;
-	while (*src && (count < nb))
+	while ((*src && (count < nb)))
 	{
 		*dest++ = *src++;
 		count++;

@@ -6,7 +6,7 @@ char	*ft_strlcat(char *dest, char *src, unsigned int size)
 	while (*dest)
 		dest++;
 	count = 0;
-	while (*src && count < size)
+	while (*src && (count < size))
 	{
 		*dest++ = *src++;
 		count++;

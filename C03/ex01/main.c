@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strcmp.c                                        :+:    :+:            */
+/*   main.c                                             :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: dguliev <dguliev@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2025/02/27 12:39:14 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/03/05 15:52:31 by dguliev       ########   odam.nl         */
+/*   Created: 2025/03/05 15:54:33 by dguliev       #+#    #+#                 */
+/*   Updated: 2025/03/05 15:55:27 by dguliev       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	int		result;
-	int		count;
+#include <stdio.h>
+#include <string.h>
 
-	count = 0;
-	result = 0;
-	while (s1[count] != '\0')
-	{
-		if (s1[count] != s2[count])
-		{
-			return (s1[count] - s2[count]);
-		}
-		count++;
-	}
-	if (s2[count] != '\0')
-		result -= s2[count];
-	else if (s2[count] == '\0')
-		result = 0;
-	else
-		result = 1;
-	return (result);
+int	ft_strncmp(char *s1, char *s2, unsigned int n);
+
+int	main(void)
+{
+	char	*s1;
+	char	*s2;
+
+	s1 = "Hallo";
+	s2 = "Hallo";
+	printf("strcmp result: %d\n", strncmp(s1, s2, 1));
+	printf("ft_strcmp result: %d\n", ft_strncmp(s1, s2, 1));
+	return (0);
 }

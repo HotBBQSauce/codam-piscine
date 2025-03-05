@@ -5,22 +5,26 @@
 /*                                                     +:+                    */
 /*   By: dguliev <dguliev@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2025/03/05 15:54:33 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/03/05 18:48:28 by dguliev       ########   odam.nl         */
+/*   Created: 2025/03/05 18:50:16 by dguliev       #+#    #+#                 */
+/*   Updated: 2025/03/05 18:50:43 by dguliev       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
+#include <bsd/string.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+char	*ft_strstr(char *str, char *to_find);
 
 int	main(void)
 {
-	char	*s1 = "Hallo";
-	char	*s2 = "Hallo";
-
-	printf("strcmp result: %d\n", strncmp(s1, s2, 1));
-	printf("ft_strcmp result: %d\n", ft_strncmp(s1, s2, 1));
-	return (0);
+	printf("\n%s\n", ft_strstr("This is banananana", "nana"));
+	printf("\n%s\n", strstr("This is banananana", "nana"));
+	printf("\n%s\n", ft_strstr("This is banananana", "AB"));
+	printf("\n%s\n", strstr("This is banananana", "AB"));
+	printf("\n%s\n", ft_strstr("00100100100", "100"));
+	printf("\n%s\n", strstr("00100100100", "100"));
+	printf("\n%s\n", ft_strstr("", "dsd"));
+	printf("\n%s\n", strstr("", "dsd"));
+	printf("\n%s\n", ft_strstr("", ""));
+	printf("\n%s\n", strstr("", ""));
 }

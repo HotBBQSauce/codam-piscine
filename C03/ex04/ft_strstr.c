@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strstr.c                                        :+:    :+:            */
+/*   ft_strstr.c                                         :+:    :+:           */
 /*                                                     +:+                    */
 /*   By: dguliev <dguliev@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/05 15:56:31 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/03/05 15:56:33 by dguliev       ########   odam.nl         */
+/*   Updated: 2025/03/05 18:50:58 by dguliev       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strstr(char *str, char *to_find)
 	char	*s;
 	char	*f;
 
+	if (to_find[0] == '\0')
+		return (str);
 	while (*str)
 	{
 		s = str;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_atoi.c                                          :+:    :+:            */
+/*   ft_atoi.c                                           :+:    :+:           */
 /*                                                     +:+                    */
 /*   By: dguliev <marvin@42.fr>                       +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/03 17:35:54 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/03/06 14:26:17 by dguliev       ########   odam.nl         */
+/*   Updated: 2025/03/06 18:16:52 by dguliev        ########   odam.nl        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int	ft_atoi(char *str)
 			count_negative++;
 		i++;
 	}
-
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
@@ -38,4 +37,3 @@ int	ft_atoi(char *str)
 		result *= -1;
 	return (result);
 }
-

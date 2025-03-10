@@ -6,7 +6,7 @@
 /*   By: dguliev <dguliev@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/05 16:30:54 by dguliev       #+#    #+#                 */
-/*   Updated: 2025/03/06 14:20:05 by dguliev       ########   odam.nl         */
+/*   Updated: 2025/03/10 16:49:10 by dguliev       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ int	main(void)
 	printf("%d", ft_atoi(" ---+--+1234ab567"));
 	return (0);
 }
-
